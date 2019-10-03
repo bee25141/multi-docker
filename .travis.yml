@@ -27,10 +27,10 @@ deploy:
   app: MultiDocker
   env: MultiDocker-env
   bucket_name: elasticbeanstalk-us-east-422728243729
-  bucker_path: docker-multi
-  on:
+  bucket_path: docker-multi
+  on: 
     branch: master
-  ACCESS_KEY_ID:
+  access_key_id: 
     secure: $AWS_ACCESS_KEY
-  SECRET_ACCESS_KEYÍ:
+  secret_access_key: 
     secure: $AWS_SECRET_KEY
