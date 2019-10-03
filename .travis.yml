@@ -30,7 +30,7 @@ deploy:
   bucker_path: docker-multi
   on:
     branch: master
-  access_key_id:
+  ACCESS_KEY_ID:
     secure: $AWS_ACCESS_KEY
-  secret_access_key:
+  SECRET_ACCESS_KEYÍ:
     secure: $AWS_SECRET_KEY
