@@ -21,17 +21,17 @@ after_success:
   - docker push bee25141/multi-server
   - docker push bee25141/multi-worker
 
-deploy: 
-  provider: elasticbeanstalk
-  region: us-east-1
-  app: multi-docker
-  env: MultiDocker-env
-  bucket_name: elasticbeanstalk-us-east-422728243729
-  bucket_path: docker-multi
-  on: 
-    branch: master
+# deploy: 
+#   provider: elasticbeanstalk
+#   region: us-east-1
+#   app: multi-docker
+#   env: MultiDocker-env
+#   bucket_name: elasticbeanstalk-us-east-422728243729
+#   bucket_path: docker-multi
+#   on: 
+#     branch: master
 
-  access_key_id:
-    secure: $AWS_ACCESS_KEY
-  secret_access_key:
-    secure: $AWS_SECRET_KEY
+#   access_key_id:
+#     secure: $AWS_ACCESS_KEY
+#   secret_access_key:
+#     secure: $AWS_SECRET_KEY
